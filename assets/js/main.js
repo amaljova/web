@@ -182,6 +182,7 @@ sr.reveal('.home_img',{delay: 400});
 sr.reveal('.home_social-icon',{ interval: 200}); 
 sr.reveal('.home_description',{delay: 300});
 sr.reveal('.home_subtitle',{delay: 600});
+sr.reveal('.home_scroll',{delay: 500});
 
 
 sr.reveal('.section_title',{delay: 600});
