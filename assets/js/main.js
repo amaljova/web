@@ -178,20 +178,20 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal('.home_title',{}); 
 sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home_img',{delay: 400}); 
+sr.reveal('.home_img',{delay: 320}); 
 sr.reveal('.home_social-icon',{ interval: 200}); 
 sr.reveal('.home_description',{delay: 300});
-sr.reveal('.home_subtitle',{delay: 600});
-sr.reveal('.home_scroll',{delay: 500});
+sr.reveal('.home_subtitle',{delay: 380});
+sr.reveal('.home_scroll',{delay: 350});
 
 
-sr.reveal('.section_title',{delay: 600});
-sr.reveal('.section_subtitle',{delay: 300});
+sr.reveal('.section_title',{delay: 200});
+sr.reveal('.section_subtitle',{delay: 150});
 
 /*SCROLL ABOUT*/
-sr.reveal('.about_img',{delay: 800}); 
-sr.reveal('.about_subtitle',{delay: 400}); 
-sr.reveal('.about_text',{delay: 400});
+sr.reveal('.about_img',{delay: 225}); 
+sr.reveal('.about_subtitle',{delay: 270}); 
+sr.reveal('.about_text',{delay: 350});
 sr.reveal('.about_description',{delay: 300});
 sr.reveal('.info_animate',{ interval: 200}); 
 
@@ -200,21 +200,21 @@ sr.reveal('.skills_subtitle',{});
 sr.reveal('.skills_text',{}); 
 sr.reveal('.skills_content',{interval: 200});
 sr.reveal('.skills_data',{interval: 350});
-sr.reveal('.skills_icon',{delay: 400});
+sr.reveal('.skills_icon',{delay: 380});
 /*SCROLL QUALIFICATION*/
 sr.reveal('.qualification_sections',{interval: 200});
-sr.reveal('.qualification_button',{interval: 500});
+sr.reveal('.qualification_button',{interval: 270});
 
 
 
-sr.reveal('.services_content',{ interval: 250});
-sr.reveal('.services_icon',{ interval: 400});  
+sr.reveal('.services_modality',{ interval: 250});
+sr.reveal('.services_icon',{ interval: 350});  
 /*SCROLL WORK*/
 sr.reveal('.work_img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact_information',{ interval: 350});
-sr.reveal('.contact_label',{ interval: 500});
+sr.reveal('.contact_label',{ interval: 320});
 sr.reveal('.contact_icon',{ interval: 300}); 
-sr.reveal('.contact_subtitle',{delay: 400}); 
+sr.reveal('.contact_subtitle',{delay: 380}); 
 sr.reveal('.contact_content',{interval: 200}); 
