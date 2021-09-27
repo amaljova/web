@@ -118,9 +118,6 @@
                         <h1 class="home_title">Hi, I'm Amal</h1>
                         <h3 class="home_subtitle">Bioinformatician, Logo Designer,Developer</h3>
                         <p class="home_description">Project Assistant at Radiomic-Oncology-AI lab, Department of Radiation Oncology, Christian Medical College, Vellore.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button_icon"></i>
-                        </a>
                     </div>
                 </div>
 
@@ -149,17 +146,17 @@
                     </p>
                     <div class="about_info">
 
-                        <div>
+                        <div class="info_animate">
                             <span class="about_info-title">01+</span>
                             <span class="about_info-name">Years<br>Experience</span>
                         </div>
 
-                        <div>
+                        <div class="info_animate">
                             <span class="about_info-title">05+</span>
                             <span class="about_info-name">Github<br>Repositories</span>
                         </div>
 
-                        <div>
+                        <div class="info_animate">
                             <span class="about_info-title">00</span>
                             <span class="about_info-name">Research<br>Publications</span>
                         </div>
@@ -541,17 +538,23 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">My Art Works</span>
-            
-            <div class="portfolio_content">
-                <div class="skills_container container grid">
-                    <div><img src="https://i.pinimg.com/originals/23/2e/5c/232e5c9a7da891dc3b89f67f15cf854b.jpg" style="width:100%"></div>
-                    <div><img src="https://i.pinimg.com/736x/8b/24/23/8b242311eb79e0da9897b1cbf53ed862.jpg" style="width:100%"></div>
-                    <div><img src="https://i.pinimg.com/originals/29/f5/58/29f558348e96f68c6640ba5a1f4e7a93.jpg" style="width:100%"></div>
-                </div>
+
+            <div class="work_container container grid">
+
+                    <div class="work_img">
+                        <img src="https://i.pinimg.com/originals/23/2e/5c/232e5c9a7da891dc3b89f67f15cf854b.jpg" alt="">
+                    </div>
+
+                    <div class="work_img">
+                        <img src="https://i.pinimg.com/736x/8b/24/23/8b242311eb79e0da9897b1cbf53ed862.jpg" alt="">
+                    </div>
+
+                    <div class="work_img">
+                        <img src="https://i.pinimg.com/originals/29/f5/58/29f558348e96f68c6640ba5a1f4e7a93.jpg" alt="">
+                    </div>
             </div>
 
         </section>
-
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section_title">Contact Me</h2>
@@ -581,8 +584,10 @@
                         </div>
                     </div>
                 </div>
+                
                 <form action="" class="contact_form grid">
                     <div class="contact_inputs grid">
+
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
                             <input type="text" class="contact_input">
@@ -592,6 +597,7 @@
                             <input type="email" class="contact_input">
                         </div>
                     </div>
+
                     <div class="contact_content">
                         <label for="" class="contact_label">Project</label>
                         <input type="text" class="contact_input">
@@ -600,6 +606,7 @@
                         <label for="" class="contact_label">Message</label>
                         <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
+
                     <div>
                         <a href="#" class="button button--flex">
                             Send Message
@@ -659,6 +666,9 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>

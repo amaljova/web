@@ -165,6 +165,11 @@ img {
     text-align: center;
 }
 
+.section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
 
 /*==================== LAYOUT ====================*/
 
@@ -187,8 +192,6 @@ img {
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-
-
 /*==================== NAV ====================*/
 
 .nav {
@@ -744,7 +747,23 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 
+/* ===== WORK =====*/
 
+.work_container{
+  row-gap: 1.5rem;
+}
+.work_img{
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.work_img img{
+  transition: 1s;
+  cursor: pointer;
+}
+.work_img img:hover{
+  transform: scale(1.1);
+}
 
 /*==================== CONTACT ME ====================*/
 
@@ -936,6 +955,7 @@ img {
     .services_modal {
         padding: 0 .5rem;
     }
+    
 
 }
 
@@ -1066,6 +1086,14 @@ img {
         width: 450px;
     }
     /*===============*/
+
+    .work_container{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .work_img{
+        height: 35rem;
+    }
+
     /*===============*/
     .footer_container {
         grid-template-columns: repeat(3, 1fr);
@@ -1088,7 +1116,7 @@ img {
 
 /* For large devices */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     .header,
     .main,
     .footer_container {
@@ -1114,9 +1142,14 @@ img {
     .contact_inputs {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+    .work_img{
+    height: 22rem;
+    }
+    .work_container{
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .work_img{
+        height: 22rem;
+    }
 
-.glass {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
 }
