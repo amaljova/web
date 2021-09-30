@@ -13,6 +13,9 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!--==================== Form Submission ====================-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Amal Joseph Varghese</title>
 </head>
@@ -593,35 +596,32 @@
                     </div>
                 </div>
                 
-                <form action="" class="contact_form grid">
+                <form action="" class="contact_form grid" id="submit-form">
                     <div class="contact_inputs grid">
 
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" class="contact_input" required name="Name" id="name">
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
+                            <input type="email" class="contact_input" required name="Email" id="email">
                         </div>
                     </div>
 
                     <div class="contact_content">
-                        <label for="" class="contact_label">Project</label>
-                        <input type="text" class="contact_input">
-                    </div>
-                    <div class="contact_content">
                         <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea name="" id="message" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button class="button button--flex" type="submit" style="border: none;">
                             Send Message
                             <i class="uil uil-message button_icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
+                
             </div>
         </section>
     </main>
@@ -680,6 +680,29 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+        
+    <!--==================== Form Submission ====================-->
+        
+        <script>
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function(response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                        //window.location.href="https://google.com"
+                },
+                error: function(err) {
+                    alert("Something Error")
+
+                }
+            })
+        })
+        </script>
+        
 </body>
 
 </html>
