@@ -171,50 +171,66 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 500,
     reset: true
 });
 
 /*SCROLL HOME*/
-sr.reveal('.home_title',{}); 
-sr.reveal('.button',{delay: 100}); 
-sr.reveal('.home_img',{delay: 160}); 
-sr.reveal('.home_social-icon',{ interval: 100}); 
-sr.reveal('.home_description',{delay: 150});
-sr.reveal('.home_subtitle',{delay: 190});
-sr.reveal('.home_scroll',{delay: 175});
+sr.reveal('.home_title', {});
+sr.reveal('.button', {
+    delay: 25
+});
+sr.reveal('.home_img', { delay: 40 });
+sr.reveal('.home_social-icon', {
+    interval: 25
+});
+sr.reveal('.home_description', { delay: 37 });
+sr.reveal('.home_subtitle', { delay: 47 });
+sr.reveal('.home_scroll', { delay: 43 });
 
 
-sr.reveal('.section_title',{delay: 100});
-sr.reveal('.section_subtitle',{delay: 75});
+sr.reveal('.section_title', {
+    delay: 25
+});
+sr.reveal('.section_subtitle', { delay: 75 });
 
 /*SCROLL ABOUT*/
-sr.reveal('.about_img',{delay: 112}); 
-sr.reveal('.about_subtitle',{delay: 135}); 
-sr.reveal('.about_text',{delay: 175});
-sr.reveal('.about_description',{delay: 150});
-sr.reveal('.info_animate',{ interval: 100}); 
+sr.reveal('.about_img', { delay: 28 });
+sr.reveal('.about_subtitle', { delay: 33 });
+sr.reveal('.about_text', { delay: 43 });
+sr.reveal('.about_description', { delay: 37 });
+sr.reveal('.info_animate', {
+    interval: 25
+});
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills_subtitle',{}); 
-sr.reveal('.skills_text',{}); 
-sr.reveal('.skills_content',{interval: 100});
-sr.reveal('.skills_data',{interval: 175});
-sr.reveal('.skills_icon',{delay: 190});
+sr.reveal('.skills_subtitle', {});
+sr.reveal('.skills_text', {});
+sr.reveal('.skills_content', {
+    interval: 25
+});
+sr.reveal('.skills_data', { interval: 43 });
+sr.reveal('.skills_icon', { delay: 47 });
 /*SCROLL QUALIFICATION*/
-sr.reveal('.qualification_sections',{interval: 100});
-sr.reveal('.qualification_button',{interval: 135});
+sr.reveal('.qualification_sections', {
+    interval: 25
+});
+sr.reveal('.qualification_button', { interval: 33 });
 
 
 
-sr.reveal('.services_modality',{ interval: 250});
-sr.reveal('.services_icon',{ interval: 175});  
+sr.reveal('.services_modality', { interval: 62 });
+sr.reveal('.services_icon', { interval: 43 });
 /*SCROLL WORK*/
-sr.reveal('.work_img',{interval: 100}); 
+sr.reveal('.work_img', {
+    interval: 25
+});
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact_information',{ interval: 175});
-sr.reveal('.contact_label',{ interval: 160});
-sr.reveal('.contact_icon',{ interval: 150}); 
-sr.reveal('.contact_subtitle',{delay: 190}); 
-sr.reveal('.contact_content',{interval: 100}); 
+sr.reveal('.contact_information', { interval: 43 });
+sr.reveal('.contact_label', { interval: 40 });
+sr.reveal('.contact_icon', { interval: 37 });
+sr.reveal('.contact_subtitle', { delay: 47 });
+sr.reveal('.contact_content', {
+    interval: 25
+});
