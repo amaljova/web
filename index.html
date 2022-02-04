@@ -149,9 +149,9 @@
                 <img src="https://amaljova.github.io/amal/amal.png" alt="Amal" class="about_img">
                 <div class="about_data">
                     <p class="about_description">
-                        The name is Amal Joseph Varghese, a youngster, a radiomics researcher. Interested in Deep Learning and Machine Learning and always wish to put knowledge from multiple domains together. <br> I love Biology & Bioinformatics, Data
-                        Science & Artificial Intelligence, Research and Education in Science and Technology, Computers, Linux and Open-Source Projects, Nature, Ecology, Forests, Oceans and Insects, Movies, Documentaries, Music, Photography, Designing
-                        and any form of Art or Philosophy.
+                        The name is Amal Joseph Varghese, a youngster, a radiomics researcher. Interested in Deep Learning and Machine Learning and always wish to put knowledge from multiple domains together.
+                        <br> I love Biology & Bioinformatics, Data Science & Artificial Intelligence, Research and Education in Science and Technology, Computers, Linux and Open-Source Projects, Nature, Ecology, Forests, Oceans and Insects, Movies, Documentaries,
+                        Music, Photography, Designing and any form of Art or Philosophy.
                     </p>
                     <div class="about_info">
 
@@ -711,24 +711,44 @@
                 }
             })
         })
-
-        //Scroll without changinh url
-        
-        $('a').on('click', function(e) {
-            // prevent default anchor click behavior
-            e.preventDefault();
-    
-            // store hash
-            var hash = this.hash;
-    
-            if ($(hash).length) {
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 300, function() {
-                    // Do something fun if you want!
-                });
-            }
-        });
+    </script>
+    <!--==================== Scroll without changinh url ====================-->
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 10, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
     </script>
 
 </body>
