@@ -875,6 +875,7 @@ img {
 .footer_link,
 .footer_social {
     color: #FFF;
+    color: var(--title-color);
 }
 
 
