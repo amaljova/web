@@ -295,7 +295,8 @@ img {
 
 
 /*==================== HOME ====================*/
-.home{
+
+.home {
     height: 100vh;
 }
 
@@ -1155,4 +1156,12 @@ img {
     .work_img {
         height: 22rem;
     }
+}
+
+
+/* Experimental */
+
+#world {
+    background-color: #328685;
+    overflow: hidden;
 }
